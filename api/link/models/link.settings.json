@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "links",
+  "info": {
+    "name": "link"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "link_url": {
+      "type": "string"
+    },
+    "images": {
+      "collection": "image",
+      "via": "links",
+      "dominant": true
+    }
+  }
+}
